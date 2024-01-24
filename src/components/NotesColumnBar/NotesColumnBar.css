@@ -1,0 +1,4 @@
+.notes-column-bar {
+    display: inline-flex;
+    flex-direction: row;
+}
