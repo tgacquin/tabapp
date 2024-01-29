@@ -1,4 +1,27 @@
 .notes-column-bar {
     display: inline-flex;
     flex-direction: row;
+    margin-bottom: 10px;
+    /* other styles */
+}
+
+.notes-column-bar.selected-bar {
+    box-shadow: 0 0 0 1px black; /* Simulated border effect for the selected bar */
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .notes-column-bar.fade-in {
+    animation: fadeIn 1s ease forwards;
+  }
+
+  .highlighted-bar {
+    background-color: rgba(173, 216, 230, 0.5); /* Light blue background for highlighted bars */
 }

@@ -1,4 +1,13 @@
 .right-column {
     background: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.settings {
+    margin: 20px;
     color: white;
+    font-size: .8rem;
+    font-weight: 200;
+    font-family:Corier
 }

@@ -1,9 +1,9 @@
 .notes-column {
-    display: flex; 
-    flex-direction: column;
-    margin-bottom: 20px;
-}
-
-.notes-column:hover {
-    background-color: rgba(255, 255, 136, 0.767);
-}
+    background-color: rgba(255, 255, 255, 0);
+  }
+  
+  .notes-column-hover:hover {
+    /* Hover styles */
+    background-color: rgba(255, 255, 136, 0.9); 
+  }
+  

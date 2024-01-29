@@ -6,6 +6,9 @@
     align-items: center;
     justify-content: center;
     color: white;
-    font-size:large;
-    font-weight: bold;
+    transition: transform 0.1s;
+}
+
+.button:hover {
+    transform: scale(0.95)
 }

@@ -1,35 +1,35 @@
 .main-layout {
-    display: flex;
-    height: 100vh; /* Full viewport height */
-    font-size: .95rem;
-    letter-spacing: -.5px;
-    font-weight: 500;
-  }
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  font-size: .95rem;
+  letter-spacing: -1px;
+  font-weight: 600;
   
-  .left-column, .right-column {
-    width: 240px;
-  }
-  
-  .tab-editor {
-    flex-grow: 1; /* Takes the remaining space */
-    height: 100%; 
-    margin-left: 5%; 
-    margin-right: 5%; 
-    margin-top: 20px;
-    justify-content: center;
-  }
-  
+}
 
-  
-  @media (max-width: 1200px) {
-    .left-column {
-      display: none; /* Hide left column */
-    }
+.left-column, .right-column {
+  width: 240px;
+  height: 100%; /* Allow these columns to grow and fill the container height */
+  /* OR you could use height: 100%; */
+}
+
+.tab-editor {
+  flex-grow: 1; /* Takes the remaining space */
+  overflow: auto; /* Adds scroll if content overflows */
+  margin-left: 5%; 
+  margin-right: 5%; 
+  margin-top: 20px;
+  justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .left-column {
+    display: none; /* Hide left column */
   }
-  
-  @media (max-width: 800px) {
-    .right-column {
-      display: none; /* Hide right column */
-    }
+}
+
+@media (max-width: 800px) {
+  .right-column {
+    display: none; /* Hide right column */
   }
-  
+}

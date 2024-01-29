@@ -4,14 +4,15 @@ import './NotesColumn.css';
 
 
 
-function NotesColumn({ notes, columnIndex, updateNote }) {
+function NotesColumn({ notes, columnIndex, updateNote, settings }) {
+    const columnClass = settings.editmode ? "notes-column notes-column-hover" : "notes-column";
+
     return (
-        <div className="notes-column">
+        <div className={columnClass}>
             {notes.map((note, noteIndex) => (
                 <Note key={noteIndex} note={note} updateNote={(newNote) => {
-                  console.log(columnIndex, noteIndex, newNote);
                   updateNote(columnIndex, noteIndex, newNote);
-                }} />
+                }} settings={settings}/>
             ))}
         </div>
     );

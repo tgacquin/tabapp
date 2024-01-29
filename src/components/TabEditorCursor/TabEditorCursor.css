@@ -1,0 +1,8 @@
+.cursor {
+    height: 100%;
+    width: 2px;
+    color:red;
+    background-color:red;
+    position: absolute;
+    margin-left: 4px;
+}
